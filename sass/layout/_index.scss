@@ -1,0 +1,737 @@
+@import "../helper/variables";
+@import "../helper/mixin";
+@import "../base/reset";
+@import "../base/customize";
+@import "../components/button";
+
+.header-section {
+  padding: $pd-3 0;
+  .header-content {
+    display: flex;
+    align-items: center;
+    @include hoverCard($width-auto-7);
+    justify-content: space-between;
+    margin: 0 auto;
+    .navbar-menu {
+      display: $display-4;
+      width: 70%;
+      justify-content: space-between;
+      list-style: none;
+      li {
+        a {
+          @include text($bgr-color-4, $fs-0, $font-weight-2);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.banner-section {
+  background-image: url(../../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  height: 500px;
+  position: relative;
+  .cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    h3 {
+      @include text($color-text, $font-size-5, $fw-bold-1);
+      text-shadow: -5px -5px 12px rgba(255, 255, 255, 0.8),
+        -5px 0 12px rgba(255, 255, 255, 0.8),
+        -5px 5px 12px rgba(255, 255, 255, 0.8),
+        0 -5px 12px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.8),
+        0 5px 12px rgba(255, 255, 255, 0.8),
+        5px -5px 12px rgba(255, 255, 255, 0.8),
+        5px 0 12px rgba(255, 255, 255, 0.8),
+        5px 5px 12px rgba(255, 255, 255, 0.8);
+    }
+    p {
+      @include text($color-title, $fs-2, $font-weight-2);
+      text-shadow: -5px -5px 12px rgba(255, 255, 255, 0.8),
+        -5px 0 12px rgba(255, 255, 255, 0.8),
+        -5px 5px 12px rgba(255, 255, 255, 0.8),
+        0 -5px 12px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.8),
+        0 5px 12px rgba(255, 255, 255, 0.8),
+        5px -5px 12px rgba(255, 255, 255, 0.8),
+        5px 0 12px rgba(255, 255, 255, 0.8),
+        5px 5px 12px rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.title-section {
+  text-align: center;
+  padding: 40px 0 50px;
+  .title-content {
+    h3 {
+      @include text($bgr-color-4, $fs-40, $font-weight-3);
+      &:after {
+        content: "";
+        width: 55%;
+        height: 1px;
+        background: $bgr-color-4;
+        display: $display-1;
+        margin: 30px auto;
+      }
+    }
+    p {
+      @include text($color-title, $font-size-icon-star, $font-weight-2);
+    }
+  }
+}
+
+.img-section {
+  background: #20afb3 url("../../img/banner-1.png") no-repeat right top;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  img {
+    display: none;
+  }
+  .img-content {
+    @include hoverCard($width-auto-7);
+    margin: 0 auto;
+    position: relative;
+    h3 {
+      @include text($color-white-0, $fs-title, $fw-bold-1);
+      line-height: 26px;
+      // &::before {
+      //     content: '';
+      //     background: url(../../img/title1-before.png);
+      //     position: absolute;
+      //     top: 0;
+      //     left: 0;
+      //     @include width-category($width-af, $height-46);
+      // }
+      // &::after {
+      //     content: '';
+      //     background: url(../../img/title1-after.png);
+      //     position: absolute;
+      //     right: 0;
+      //     top: 0;
+      //     @include width-category($width-af, $height-46);
+      // }
+    }
+    .text {
+      h6 {
+        @include text($color-white-0, $fs-2, $fw-bold-1);
+        line-height: 26px;
+        padding-top: 30px;
+      }
+      p {
+        @include text($color-white-0, $fs-0, $font-weight-2);
+        line-height: 26px;
+      }
+    }
+    ul {
+      display: $display-4;
+      list-style: none;
+      margin-top: $mg-1;
+      li {
+        border-left: 1px solid #ffffff;
+        &:first-child {
+          border-left: 1px solid #ffffff;
+        }
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          @include text($color-white-0, $fs-0, $font-weight-2);
+        }
+      }
+    }
+  }
+}
+
+.img1-section {
+  img {
+    display: none;
+  }
+  background: #4386b8 url("../../img/banner-2.png") no-repeat left top;
+  display: $display-4;
+  align-items: center;
+  text-align: right;
+  height: 300px;
+  border-bottom: 1px solid #ffffff;
+  .content-img {
+    @include hoverCard($width-auto-7);
+    margin: 0 auto;
+    position: relative;
+    h3 {
+      @include text($color-white-0, $fs-title, $fw-bold-1);
+      line-height: 26px;
+    }
+    .text {
+      h6 {
+        @include text($color-white-0, $fs-2, $fw-bold-1);
+        line-height: 26px;
+        padding-top: 30px;
+      }
+      p {
+        @include text($color-white-0, $fs-0, $font-weight-2);
+        line-height: 26px;
+      }
+    }
+    ul {
+      display: $display-4;
+      justify-content: flex-end;
+      list-style: none;
+      margin-top: $mg-1;
+      li {
+        border-left: 1px solid #ffffff;
+        &:first-child {
+          border-left: 1px solid #ffffff;
+        }
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          @include text($color-white-0, $fs-0, $font-weight-2);
+        }
+      }
+    }
+  }
+}
+
+.img2-section {
+  img {
+    display: none;
+  }
+  background: #456981 url("../../img/banner-3.png") no-repeat right top;
+  display: $display-4;
+  align-items: center;
+  height: 300px;
+  border-bottom: 1px solid #ffffff;
+  .content-img {
+    @include hoverCard($width-auto-7);
+    margin: 0 auto;
+    position: relative;
+    h3 {
+      @include text($color-white-0, $fs-title, $fw-bold-1);
+      line-height: 26px;
+    }
+    .text {
+      h6 {
+        @include text($color-white-0, $fs-2, $fw-bold-1);
+        line-height: 26px;
+        padding-top: 30px;
+      }
+      p {
+        @include text($color-white-0, $fs-0, $font-weight-2);
+        line-height: 26px;
+      }
+    }
+    ul {
+      display: $display-4;
+      list-style: none;
+      margin-top: $mg-1;
+      li {
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          @include text($color-white-0, $fs-0, $font-weight-2);
+        }
+      }
+    }
+  }
+}
+
+.img3-section {
+  img {
+    display: none;
+  }
+  background: #f4ac26 url(../../img/banner-2.png) no-repeat left top;
+  display: $display-4;
+  align-items: center;
+  text-align: right;
+  height: 300px;
+  border-bottom: 1px solid #ffffff;
+  .content-img {
+    @include hoverCard($width-auto-7);
+    margin: 0 auto;
+    position: relative;
+    h3 {
+      @include text($color-white-0, $fs-title, $fw-bold-1);
+      line-height: 26px;
+    }
+    .text {
+      h6 {
+        @include text($color-white-0, $fs-2, $fw-bold-1);
+        line-height: 26px;
+        padding-top: 30px;
+      }
+      p {
+        @include text($color-white-0, $fs-0, $font-weight-2);
+        line-height: 26px;
+      }
+    }
+    ul {
+      display: $display-4;
+      justify-content: flex-end;
+      list-style: none;
+      margin-top: $mg-1;
+      li {
+        border-left: 1px solid #ffffff;
+        &:first-child {
+          border-left: 1px solid #ffffff;
+        }
+        &:last-child {
+          border-right: 1px solid #ffffff;
+        }
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          @include text($color-white-0, $fs-0, $font-weight-2);
+        }
+      }
+    }
+  }
+}
+
+.img4-section {
+  img {
+    display: none;
+  }
+  background: #ef8449 url(../../img/banner-3.png) no-repeat right top;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  border-bottom: 1px solid #ffffff;
+  .content-img {
+    @include hoverCard($width-auto-7);
+    margin: 0 auto;
+    position: relative;
+    h3 {
+      @include text($color-white-0, $fs-title, $fw-bold-1);
+      line-height: 26px;
+    }
+    .text {
+      h6 {
+        @include text($color-white-0, $fs-2, $fw-bold-1);
+        line-height: 26px;
+        padding-top: 30px;
+      }
+    }
+    .btn {
+      margin-top: 30px;
+      a.btn-content {
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+      }
+      &:hover {
+        a {
+          background-color: $bg-button;
+          color: #ef8449;
+        }
+      }
+    }
+  }
+}
+
+.news-about {
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px 0 70px;
+  .content-news {
+    display: $display-4;
+    padding-bottom: 20px;
+    h4 {
+      @include text($color-title, $fs-title, $font-weight-2);
+    }
+    p {
+      margin: $mg-3;
+      display: $display-4;
+      align-items: center;
+      padding-left: 30px;
+      a {
+        @include text($bgr-color-4, $font-size-3, $font-weight-2);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .title-news {
+    @include bottompd($pd-3);
+    border-top: 1px solid $bgr-color-5;
+    &:last-child {
+      border-bottom: 1px solid $bgr-color-5;
+    }
+    a {
+      display: $display-4;
+      text-decoration: none;
+      p.text {
+        background-color: $bgs-button-1;
+        @include text($color-white-0, $font-size-1, $font-weight-2);
+        display: $display-4;
+        align-items: center;
+        padding: 0 10px;
+        margin-right: 20px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      p.date {
+        @include text($color-title, $fs-3, $fw-bold-1);
+        display: $display-4;
+        align-items: center;
+        margin-right: 20px;
+      }
+      h4 {
+        @include text($color-title, $fs-5, $font-weight-2);
+        display: $display-4;
+        align-items: center;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.footer-section {
+  .bg-ft {
+    padding: 20px 0;
+    background-color: $bgr-color-7;
+    .top-ft {
+      display: flex;
+      @include hoverCard($width-auto-7);
+      margin: 0 auto;
+      .box-title {
+        -ms-flex: 0 0 16%;
+        flex: 0 0 16%;
+        max-width: 16%;
+        padding: 0 10px;
+        line-height: 26px;
+        a {
+          text-decoration: none;
+          p {
+            @include text($color-title, $fs-5, $fw-bold-1);
+          }
+          span {
+            @include text($bgr-color-4, $font-size-3, $font-weight-2);
+            &::before {
+              content: "-";
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bot-ft {
+    display: $display-4;
+    align-items: center;
+    @include hoverCard($width-auto-7);
+    margin: 0 auto;
+    padding: 20px 0 30px;
+  }
+}
+
+@include mediaQuery(medium) {
+  .header-section {
+    .header-content {
+      @include hoverCard($width-auto);
+      .navbar_btn {
+          display: none;
+      }
+      .navbar-menu {
+          display: none;
+      }
+    }
+  }
+  .banner-section {
+    height: 250px;
+    .cover {
+      width: 80%;
+      h3 {
+        font-size: $fs-40;
+      }
+      p {
+        font-size: $fs-0;
+      }
+    }
+  }
+  .title-section {
+    .title-content {
+      h3 {
+        font-size: $fs-0;
+        &::after {
+          content: "";
+          width: 90%;
+          margin: 20px auto;
+        }
+      }
+      p {
+        font-size: $fs-3;
+        text-align: $txt-left;
+        padding: 0 10px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  .img-section {
+    background: #20afb3;
+    display: $display-1;
+    height: auto;
+    padding: 15px 10px;
+    .img-sm {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .img-content {
+      @include hoverCard($width-auto);
+      h3 {
+        font-size: $font-size-icon-star;
+      }
+      .text {
+        h6 {
+          padding: 10px 0;
+        }
+        p {
+          font-size: $fs-3;
+          br {
+            display: none;
+          }
+        }
+      }
+      ul {
+        li {
+          a {
+            font-size: $font-size-3;
+          }
+        }
+      }
+    }
+  }
+  .img1-section {
+    background: #4386b8;
+    display: $display-1;
+    height: auto;
+    padding: 15px 10px;
+    .img-sm {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .content-img {
+      @include hoverCard($width-auto);
+      text-align: left;
+      h3 {
+        font-size: $font-size-icon-star;
+      }
+      .text {
+        h6 {
+          padding: 10px 0;
+          font-size: $fs-0;
+        }
+        p {
+          font-size: $fs-3;
+          br {
+            display: none;
+          }
+        }
+      }
+      ul {
+        justify-content: flex-start;
+        li {
+          a {
+            font-size: $font-size-3;
+          }
+        }
+      }
+    }
+  }
+  .img2-section {
+    background: #456981;
+    display: $display-1;
+    height: auto;
+    padding: 15px 10px;
+    .img-sm {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .content-img {
+      @include hoverCard($width-auto);
+      text-align: left;
+      h3 {
+        font-size: $font-size-icon-star;
+      }
+      .text {
+        h6 {
+          padding: 10px 0;
+          font-size: $fs-0;
+        }
+        p {
+          font-size: $fs-3;
+          br {
+            display: none;
+          }
+        }
+      }
+      ul {
+        justify-content: flex-start;
+        li {
+          a {
+            font-size: $font-size-3;
+          }
+        }
+      }
+    }
+  }
+  .img3-section {
+    background: #4386b8;
+    display: $display-1;
+    height: auto;
+    padding: 15px 10px;
+    .img-sm {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .content-img {
+      @include hoverCard($width-auto);
+      text-align: left;
+      h3 {
+        font-size: $font-size-icon-star;
+      }
+      .text {
+        h6 {
+          padding: 10px 0;
+          font-size: $fs-0;
+        }
+        p {
+          font-size: $fs-3;
+          br {
+            display: none;
+          }
+        }
+      }
+      ul {
+        justify-content: flex-start;
+        li {
+          a {
+            font-size: $font-size-3;
+          }
+        }
+      }
+    }
+  }
+  .img4-section {
+    background: #ef8449;
+    display: $display-1;
+    height: auto;
+    padding: 15px 10px;
+    .img-sm {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+    .content-img {
+      @include hoverCard($width-auto);
+      text-align: left;
+      h3 {
+        font-size: $font-size-icon-star;
+      }
+      .text {
+        h6 {
+          padding: 10px 0;
+          font-size: $fs-0;
+        }
+        p {
+          font-size: $fs-3;
+          br {
+            display: none;
+          }
+        }
+      }
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+  .news-about {
+    @include hoverCard($width-auto);
+    .content-news {
+      justify-content: $txt-center;
+      p {
+        display: none;
+      }
+    }
+    .title-news {
+      @include pdfooter($pd-4);
+      a {
+        display: $display-1;
+        p.text {
+          display: $display-1;
+          float: left;
+        }
+        h4 {
+          @include hoverCard($width-auto);
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .footer-section {
+    .bg-ft {
+      .top-ft {
+        @include hoverCard($width-auto);
+        display: $display-1;
+        .box-title {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          border-bottom: 1px solid $bgr-color-5;
+          padding: 10px;
+        }
+      }
+    }
+    .bot-ft {
+      @include hoverCard($width-auto);
+      display: $display-1;
+      text-align: $txt-center;
+      img {
+          margin-bottom: 10px;
+      }
+    }
+  }
+}

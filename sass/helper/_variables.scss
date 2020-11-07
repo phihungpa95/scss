@@ -1,0 +1,185 @@
+
+/// Backgroup /////
+$bg-header-top : rgb(29, 113, 171);
+$bg-header : rgb(24, 158, 255);
+$bg-freeShip: rgba(0, 153, 0, 0.05);
+$bg-button : rgb(255, 255, 255);
+$bg-sreach : rgb(0, 109, 144);
+
+$bgr-color-1 : #0080ff;
+$bgr-color-2 : blue;
+$bgr-color-4 : #000000;
+$bgr-color-5 : #ddd;
+$bgr-color-6 : #f4f4f4;
+$bgr-color-7 : #fafafa;
+$bgs-button-1: #0f466b;
+
+
+
+$hover-bg-button :  rgb(236, 236, 236);
+///// font-weight ////
+$font-weight-1 : 300;
+$font-weight-2 : 400;
+$font-weight-3 : 500;
+$fw-normal: normal;
+$fw-bold-1: 700;    
+
+//////////Width /////////////
+$width-af: 6px;
+$width-button : 30px;
+$width-img-i:20px;
+$width-1 : 1350px;
+$width-2 : 500px;
+$width-3 : 170px;
+$width-4 : 150px;
+$width-auto: 100%;
+$width-auto-1: auto;
+$width-auto-2: 20%;
+$width-auto-3: 80%;
+$width-auto-5: 50%;
+$width-auto-7: 70%;
+$width-auto-8: 30%;
+
+//////////Height ///////////
+$height-a-img-i:20px;
+$height-banner:80px;
+$height : 30px;
+$height-1: 40px;
+
+
+///// Font-size ///// 
+$font-size-1 : 12px;
+$font-size-2 : 24px;
+$font-size-3 : 13px;
+$font-size-4 : 17px;
+$font-size-icon-star : 18px;
+$fs-0: 16px; //default
+$fs-1: 12px;
+$fs-2: 20px;
+$fs-review : 13px;
+$fs-title: 26px;
+$fs-40 : 30px;
+$fs-40: 40px;
+//////////////////////// Marginn ///////////////
+$mg-0: 2px;
+$mg-1: 10px;
+$margin-right-img-i:4px;
+$mg-3 : 0;
+$mg-4 : 9px;
+$mg-5 : 3px;
+
+//////////////////////////////// Padding ///////////////////
+$pd-2: 15px;
+$pd-3: 20px;
+$pd-4 : 10px;
+$pd-5 : 0;
+$pd-6 : 6px;
+$pd-7 : 5px;
+$pd-border :  20px 0px;
+
+//////////////////////////////  Display ///////////////////
+$display-1 : block;
+$display-2 : inline-block;
+$display-3 : inline;
+
+
+///// list-style ///////////
+$list-style-1 : none;
+
+///// float ////////
+$float-li-a-img-i:left;
+
+///// line-height///////
+$line-height-1: 2.3em;
+///// line-height new///////
+$line-height-3: 1.3;
+$line-height : 20px;
+$line-height-2: 30px;
+
+/// Color font ///// 
+$color-font-header : rgb(255, 255, 255);
+$color-icon-header : rgb(253, 216, 53);
+$color-icon-star : rgb(255, 193, 32);
+/////////////////////////////////////////
+$color-black-0: #29303b; // default
+$color-white-0: #fff; //default
+$color-red-0:#ec5252;
+$color-giaSanPham :  rgb(255, 52, 37);
+$color-review : rgb(155, 155, 155);
+$color-account: rgb(160, 160, 160);
+$color-defaut-title: rgb(0, 153, 0);
+$color-title: #333333;
+$color-text: #0f466b;
+/// Border radius  ///
+$border-button : 1px solid rgb(236, 236, 236);
+$border-radius_0: 0;
+$border-radius_1: 5px;
+$border-radius_100: 100%;
+$border-top-1 :  1px solid rgb(236, 236, 236);
+$border-bottom: 1px solid rgb(27, 168, 255);
+
+$border-1 : none;
+$border-2 : 1px solid #ccc;
+$border-3: 2px solid #ffffff;
+//variable text-alighn
+$txt-center: center;
+$txt-left: left;
+$txt-right: right;
+$txt-justify: justify;
+
+//variable opacity
+$opacity-1: 0.8;
+
+//break points
+$breakpoints:( 'extra-large': 1200px, 'large': 992px, 'medium': 767px, 'small': 576px, );
+
+//variable position
+$position: relative;
+$position-1: absolute;
+
+//variable margin
+$mg-6: 15px;
+$mg-7: 22px;
+$mg-8: 32px;
+$mg-9: 20px 0;
+$mg-circle: -15px;
+
+//variable padding
+$pd-8: 30px;
+$pd-9: 32px;
+
+//variable border radius
+$border-radius_50: 50%;
+$border-radius_2: 30px;
+
+//variable width
+$width-img : 45px;
+$width-img-svg: 24px;
+$width-auto-9: 70%;
+$width-auto-10: 33%;
+$width-number: 26px;
+
+//variable height
+$height-img-svg: 24px;
+$height-number: 26px;
+$height-2: 100%;
+$height-46: 46px;
+
+//variable background
+$bgr-color-7: rgb(236, 236, 236);
+
+// variable display
+$display-4: flex;
+
+// variable float
+$float-1: right;
+
+// variable font size
+$font-size-5: 42px;
+$fs-3: 14px;
+$fs-5: 15px;
+
+// variable border
+$border-auto: 1px dashed rgb(0, 153, 0);
+
+ 
